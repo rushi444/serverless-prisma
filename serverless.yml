@@ -30,8 +30,7 @@ provider:
   # commit your env.yml.
   #
   environment: ${file(env.yml):${self:provider.stage}}
-  cfnRole: arn:aws:iam::148716834237:role/SFProRole-default
-
+  cfnRole: arn:aws:iam::148716834237:role/default
 functions:
   graphql:
     handler: src/graphql.graphqlHandler
